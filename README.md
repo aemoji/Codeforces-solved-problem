@@ -1,2 +1,2 @@
-# Codeforces-solved-problem
-codeforces problems solutions
+# Codeforces problems
+codeforces problems solution
