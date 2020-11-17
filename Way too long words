@@ -1,0 +1,17 @@
+import java.util.*; 
+  
+public class Solve { 
+      public static void main(String args[]) { 
+    Scanner sc=new Scanner(System.in);
+    int t=sc.nextInt();
+    while(t-->0){
+    String s=sc.next();
+    int cnt=s.length()-2;
+    if(s.length()<=10){
+        System.out.println(s);
+    }
+    else{
+    System.out.println(s.charAt(0)+""+cnt+""+s.charAt(cnt+1));}
+    }
+   } 
+} 
