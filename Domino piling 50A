@@ -1,0 +1,12 @@
+import java.util.*; 
+  
+public class Solve { 
+      public static void main(String args[]) { 
+    Scanner sc=new Scanner(System.in);
+    int t=sc.nextInt();
+    int k=sc.nextInt();
+     
+    System.out.println((t*k)/2);// multiply t and k and divide by 2 because standard domino is 2*1=2
+    
+   } 
+} 
