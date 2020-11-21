@@ -1,0 +1,21 @@
+import java.util.*;
+
+ public class Solve44{
+         public static void main(String[] args) {
+		 Scanner sc=new Scanner(System.in);
+         int t=sc.nextInt(); 
+         String[] j=new String[t+1];
+         
+        // taking an extra input
+        // if t=3 then i= 0,1,2,3 total 4 inputs because sc.nextLine() takes an extra input of space
+       
+        for (int i=0;i<t+1 ;i++ ) {
+     	String s=sc.nextLine();
+        j[i]+=s;
+        }
+       Set<String> q=new HashSet<String>();
+        for(int i=0;i<t+1;i++){
+        q.add(j[i]);
+           }
+        System.out.println(q.size()-1);   // minus 1 beacause its taking an extra input 
+}  }
