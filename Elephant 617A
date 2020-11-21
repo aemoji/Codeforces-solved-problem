@@ -1,0 +1,29 @@
+import java.util.*;
+
+
+ public class Solve617{
+
+
+
+public static void main(String[] args) {
+	
+
+	Scanner sc=new Scanner(System.in);
+	int k=sc.nextInt();
+
+
+	int sum=0;
+	sum=k%5;
+	int num=0;
+	num=k/5;
+	if(sum==0){
+		System.out.println(num);
+	}
+
+	else{
+		num=num+1;
+		System.out.println(num);
+	}
+
+}
+}
