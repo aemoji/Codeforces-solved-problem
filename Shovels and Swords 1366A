@@ -1,0 +1,63 @@
+import java.util.*;
+import java.io.*;
+
+
+public class solve1366b{
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int t=sc.nextInt();
+        while(t-->0){
+
+          int stick=sc.nextInt();
+          int diomond=sc.nextInt();
+          int cnt=0;
+          
+          if(stick==0 ||diomond==0){
+              System.out.println("0");
+          }
+          else if(stick==diomond){
+              System.out.println((stick+diomond)/3);
+          }
+          else{
+
+        
+        System.out.println(Math.min(Math.min(stick,diomond),(stick+diomond)/3));
+          }
+          
+          
+          
+          
+
+    }
+    
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
