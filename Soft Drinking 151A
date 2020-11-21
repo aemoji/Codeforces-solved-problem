@@ -1,0 +1,29 @@
+import java.util.*;
+
+  public class Solve151{
+ 	public static void main(String[] args) {
+ 		
+ 		Scanner sc=new  Scanner(System.in);
+ 		int n=sc.nextInt();
+ 		int k=sc.nextInt();
+ 		int l=sc.nextInt();
+ 		int c=sc.nextInt();
+ 		int d=sc.nextInt();
+ 		int p=sc.nextInt();
+ 		
+ 	    int nl=sc.nextInt();
+ 		int np=sc.nextInt();
+ 		
+ 		
+ 		 int totalliter=l*k;
+ 		 int totalcut=c*d;
+ 	 int tot=totalliter/nl;
+ 	 int to=p/np;
+ 	 int nim= Math.min(tot,to);
+ 	 System.out.println(Math.min(nim,totalcut)/n);
+ 	}
+ }
+
+ 		
+ 		
+       
