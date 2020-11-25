@@ -1,0 +1,27 @@
+import java.util.*;
+
+public class Sol731{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		String s=sc.next();
+		char[] c=s.toCharArray();
+		int rot=0,asci=97,diff;
+
+
+          for(int i=0;i<s.length();i++){
+               
+                diff=Math.abs(asci-c[i]);
+                if(diff>13){
+                	diff=26-diff;
+
+                }
+                rot+=diff;
+                asci=c[i];
+
+          }
+
+	 System.out.println(rot);
+
+	}
+}
+ 
