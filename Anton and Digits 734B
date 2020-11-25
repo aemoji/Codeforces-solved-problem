@@ -1,0 +1,39 @@
+import java.util.*;
+
+public class Sol734b{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int k2=2,k3=3,k5=5,k6=6;
+
+		int k2n=sc.nextInt();
+		int k3n=sc.nextInt();
+		int k5n=sc.nextInt();
+		int k6n=sc.nextInt();
+
+		int max=Math.max(k6n,k2n);
+		max=Math.max(max,k5n);
+		max=Math.max(max,k3n);
+
+    int ans=0;int sum=0;
+    int anss=0;
+    for(int i=0;i<max;i++){
+
+		if(k2n>0 && k5n>0 && k6n>0){
+          ans+=256;
+          k6n--;
+          k5n--;
+          k2n--;
+		}
+else if(k2n>0 && k3n>0){
+			sum+=32;
+			 k2n--;
+			 k3n--;
+
+		}
+		 anss=Math.max(ans+sum,anss);
+
+		}
+		System.out.println(anss);
+}
+
+}
