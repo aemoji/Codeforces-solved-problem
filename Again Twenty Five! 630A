@@ -1,0 +1,9 @@
+import java.util.*;
+
+public class Sol630{ 
+public static void main(String[] args) {
+    Scanner sc=new  Scanner(System.in);
+ 		 String n=sc.next();
+   System.out.println(25);// because 5^n and n>2 then last two digit is always 25;
+}  }
+ 
