@@ -1,0 +1,40 @@
+ 
+import java.awt.*;
+import java.util.*;
+import java.io.*;
+
+
+
+
+public class A653{
+
+	public static void main(String[] args) {
+
+		Scanner sc=new Scanner(System.in);
+		int t=sc.nextInt();
+		while(t-->0){
+			int x=sc.nextInt();
+			int y=sc.nextInt();
+			int n=sc.nextInt();
+             int k=0;
+
+             k=n/x ;
+
+             k=k*(x) + y;
+
+		     int ans=0;
+		     if(k>n){
+		     	k=k-x;
+		   System.out.println(Math.max(ans,k));}
+		   else{
+		   	System.out.println(Math.max(ans,k));
+
+		   }
+
+
+
+		
+	}}
+}
+
+
