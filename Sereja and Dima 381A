@@ -1,0 +1,33 @@
+import java.util.*;
+  public class Solve381{
+ public static void main(String[] args) {
+ 		Scanner sc=new  Scanner(System.in);
+ 		int n=sc.nextInt();
+ 	      int[] arr=new int[n];
+           int  diama=0, siaza=0;
+ 	      for(int i=0;i<n;i++){
+ 	      	arr[i]=sc.nextInt();
+ 	      	
+          }
+ 	      int left=0,right=n-1;
+        int  i=0;
+        while(left<=right)
+        {    if(i%2==1)
+            {
+                if(arr[left]>=arr[right])
+                    diama+=arr[left++];
+                else
+                    diama+=arr[right--];  }
+            else
+            {
+                if(arr[left]>=arr[right])
+                    siaza+=arr[left++];
+                else
+                    siaza+=arr[right--];
+            }
+            i++;
+        }
+ 	      System.out.print(siaza+" ");
+ 	      System.out.print(diama);
+ 	  }
+ 	}
